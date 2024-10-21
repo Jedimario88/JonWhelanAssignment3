@@ -1,3 +1,6 @@
+Git Lab Tutorials: 10/20/2024
+GitHub Account Setup: January 2023
+
 1) E:\JonWhelanAssignment3>git commit
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
