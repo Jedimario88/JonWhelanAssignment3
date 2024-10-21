@@ -1,0 +1,65 @@
+1) E:\JonWhelanAssignment3>git commit
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E:\JonWhelanAssignment3>git add docs
+
+E:\JonWhelanAssignment3>git commit
+hint: Waiting for your editor to close the file... unix2dos: converting file E:/JonWhelanAssignment3/.git/COMMIT_EDITMSG to DOS format...
+dos2unix: converting file E:/JonWhelanAssignment3/.git/COMMIT_EDITMSG to Unix format...
+[master d6feca6] Add status.txt document
+ 1 file changed, 6 insertions(+)
+ create mode 100644 docs/status.txt
+
+2) There have been 9 commits done to the repository overall.
+The command I used was git rev-list --count --all
+
+3) The readme file was last modified on 10/21/2024 at 12:44:47.
+The command I used was git log -1 --pretty="format:%ci" README.md
+
+4) Branches provide security and the ability to fall back on a functioning
+version of your software if you mess something up. Additionally, they allow
+multiple group members to work on different features without affecting each
+other, and then they can merge them back into main one at a time.
+
+5) The status command shows you the working directory and a staged snapshot
+of the git, while the log command shows you the history of all commits in
+the git.
+
+6) Use git log --follow Vehicle.h
+
+7) Use git log --grep="file"
+
+8) In the context of object-oriented programming...
+	I) Inheritance is when a class inherits properties from another class.
+	   For instance, the bicycle class inherits some functions and data
+	   from the vehicle class.
+	II) Polymorphism allows a class, particularly if its a child class,
+	    to behave differently depending on the situation. For instance,
+	    if creating an array of vehicles, you can include bicycles and cars
+	    in it, because they are treated as vehicles. When you call a member
+	    function though, they are treated as a bicycle or car respectively.
+	III) Encapsulation is just how classes are designed. They consist
+	     of data/variables bundled with functions that act on the data.
+	     It's called encapsulation because the two are encapsulated in
+	     a single definition
+
+9) The dictator/lieutenants workflow has intermediary lieutenant repositories,
+while the integration manager doesn't. The integration manager manually handles
+integrating every individual developer's public repository into the blessed one,
+while the dictator has lieutenants that integrate a select few developers' changes
+before the dictator integrates the lieutenants' changes into the blessed repository.
+
+10) A team of 100 devs is quite large, so having each dev integrate their own
+code independently in the centralized workflow could be disastrous; one dev
+updates master, forcing the others to rework their code around it. If that
+happens too many times, it'll drastically increase development time. By having
+a couple lieutenants integrate the code for a group of developers, it reduces
+the amount of conflicts that occur, and therefore reduces development time
